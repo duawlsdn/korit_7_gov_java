@@ -1,20 +1,20 @@
 package generic;
 
-public class HighStudent {
-    private String name;
+public class HighStudent extends Student{
+    private String HighSchool;
 
-    public String getName() {
-        return name;
+    public String getHighSchool() {
+        return HighSchool;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHighSchool(String highSchool) {
+        HighSchool = highSchool;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                '}';
+        return "HighStudent{" +
+                "HighSchool='" + HighSchool + '\'' +
+                "} " + super.toString();
     }
 }
