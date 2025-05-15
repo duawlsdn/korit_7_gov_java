@@ -14,14 +14,14 @@ public class User {
 
     public User() {}
 
-    public User(String username, String password, String name, String email, String phone, String address, int age, List<String> roles) {
+    public User(String username,String password,String name,String email,String phone,String address,int aage,List<String> roles){
         this.username = username;
         this.password = password;
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.address = address;
-        this.age = age;
+        this.age = aage;
         this.roles = roles;
     }
 
@@ -98,7 +98,7 @@ public class User {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", age='" + age + '\'' +
+                ", age=" + age +
                 ", roles=" + roles +
                 '}';
     }

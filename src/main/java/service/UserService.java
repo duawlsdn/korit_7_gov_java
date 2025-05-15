@@ -34,7 +34,7 @@ public class UserService {
                 .filter(user -> user.getUsername().equals(username))
                 .findAny()
                 .ifPresentOrElse(user ->
-                    System.out.println("이미 존재하는 User정보입니다. 찾은 정보 -> " + user),
+                                System.out.println("이미 존재하는 User정보입니다. 찾은 정보 -> " + user),
                         () -> userList.add(new User(username, password, name, email, phone, address, age, roles)));
 
     }
