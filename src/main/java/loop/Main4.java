@@ -1,5 +1,7 @@
 package loop;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -12,12 +14,15 @@ public class Main4 {
                 new Student("김준삼",75),
                 new Student("김준사",99),
                 new Student("김준오",85));
-        Student max = null;
-        for (Student s : students) {
-            if(max == null || s.getScore() > max.getScore()) {
-                max = s;
-            }
-        }
+//        Student max = null;
+//        for (Student s : students) {
+//            if(max == null || s.getScore() > max.getScore()) {
+//                max = s;
+//            }
+//        }
+//        System.out.println(max.getName());
+
+        Student max = Collections.max(students, Comparator.comparing(Student::getScore));
         System.out.println(max.getName());
     }
 }
